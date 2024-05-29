@@ -1,0 +1,36 @@
+.tray-content {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    color: white;
+    cursor: pointer;
+
+    .tray-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #214c6b;
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+
+    &:hover {
+
+        .tray-icon {
+            animation: scaleIcon 0.3s forwards;
+        }
+    }
+}
+
+@keyframes scaleIcon {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}

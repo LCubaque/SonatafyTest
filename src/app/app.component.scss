@@ -1,0 +1,55 @@
+.tray-page {
+    background: linear-gradient(45deg, #7c8594, #b1b2b3);
+    backdrop-filter: blur(10px);
+    border-radius: 16px 16px 0 0;
+
+    .center-tray {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tray-pull {
+        width: 32px;
+        border-radius: 4px;
+        margin: 12px 0;
+        height: 4px;
+        background-color: #ffffff;
+    }
+
+    .shared-tray-content {
+        width: 100%;
+        padding: 8px 0;
+        overflow: hidden;
+
+        &.closed {
+            animation: close 0.3s ease-in-out both;
+        }
+
+        animation: open 0.3s ease-in-out both;
+    }
+}
+
+@keyframes close {
+    0% {
+        height: 200px;
+        padding: 16px 0;
+    }
+
+    100% {
+        height: 0;
+        padding: 0;
+    }
+}
+
+@keyframes open {
+    0% {
+        height: 0;
+        padding: 0;
+    }
+
+    100% {
+        height: 200px;
+        padding: 16px 0;
+    }
+}
