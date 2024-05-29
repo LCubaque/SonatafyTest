@@ -5,22 +5,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  animations: [trigger('openClose', [
-    state('open', style({
-      height: 'auto'
-    })),
-    state('closed', style({
-      height: '1px'
-    })),
-    transition('open => closed', [
-      animate('0.3s')
-    ]),
-    transition('closed => open', [
-      animate('0.2s')
-    ]),
-  ]),
-  ],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   sharedTrayShow: boolean = true;

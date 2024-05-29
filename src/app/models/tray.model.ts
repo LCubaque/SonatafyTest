@@ -1,4 +1,4 @@
 export class Tray {
     icon: string = 'A';
-    text: string = '';
+    text: string = 'Default text';
 }
