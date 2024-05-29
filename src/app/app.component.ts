@@ -1,6 +1,5 @@
 import { Component, HostListener } from '@angular/core';
 import { Tray } from './models/tray.model';
-import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
